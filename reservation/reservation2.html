@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./css/reservation.css">
+    <link rel="stylesheet" href="./css/reservation2.css">
+</head>
+<body>
+    <h1>Check Your Reservation</h1>
+    <input type="tel" id="phone" placeholder="Enter Phone Number" required><br>
+    <button id="read">Get Info</button>
+    <form id="formr">
+        <h1>Reservation Details</h1>
+        <div class="alert">RESERVATIONS SUCCESSFUL</div>
+        <input type="text" id="name" placeholder="Name"><br>
+        <input id="email" type="email" placeholder="Enter Mail"><br>
+        <select name="select" id="f1"><br>
+            <option value="1">Number of People</option><br>
+            <option value="1">1 People</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8+">8+ People</option>
+        </select><br>
+        <input id="date" type="date"  placeholder="Date"><br>
+        <input id="time" type="time"  placeholder="Time"><br>
+        <!-- <button id="insert" type="submit">Submit</button> -->
+       
+        <!-- <input id="insert" type="submit" value="Submit"> -->
+        <button id="update">Update</button>
+        <button id="delete">Delete</button>
+        </form>
+       
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./Script/firebaseConfig.js"></script>
+    <script src="./Script/app2.js"></script>
+</body>
+</html>

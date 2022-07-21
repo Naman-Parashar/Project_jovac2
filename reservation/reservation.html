@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./css/reservation.css">
+</head>
+<body>
+    <form id="formr">
+        <h1>Reservation</h1>
+        <hr>
+        <div class="alert">RESERVATIONS SUCCESSFUL</div>
+        <input type="text" id="name" placeholder="Name" ><br>
+        <input type="tel" id="phone" placeholder="Enter Phone Number" ><br>
+        <input id="email" type="email" placeholder="Enter Mail (only @gmail.com)"><br>
+        <select name="select" id="f1" ><br>
+            <option value="0" selected disabled>Number of People</option><br>
+            <option value="1">1 People</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8+">8+ People</option>
+        </select><br>
+        <input id="date" type="date" min="2022-07-20"  max="2022-07-20" placeholder="Date"><br>
+        <input id="time" type="time"min="12:00 pm" max="21:00 pm" placeholder="Time"><br>
+        <button id="insert" type="submit">Submit</button>
+        <button><a href="./reservation2.html">Check Reservation</a></button>
+        <!-- <input id="insert" type="submit" value="Submit"> -->
+        </form>
+
+        <script>
+            function date(){
+                var d = new Date();
+
+                var y = d.getFullYear();
+            var m = "0"+(d.getMonth()+1);
+                var da = d.getDate();
+            var  td = y+"-"+m+"-"+da; 
+
+            return td;
+            }
+
+            function date2(){
+                var d = new Date();
+
+                var y = d.getFullYear();
+            var m = "0"+(d.getMonth()+2);
+                var da = d.getDate();
+            var  td = y+"-"+m+"-"+da; 
+
+            return td;
+            }
+
+            var today = date();
+            var today2 = date2();
+
+        document.getElementById("date").min=today;
+        document.getElementById("date").max=today2;
+
+
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./Script/firebaseConfig.js"></script>
+    <script src="./Script/app.js"></script>
+</body>
+</html>

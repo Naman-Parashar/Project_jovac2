@@ -1,0 +1,40 @@
+body{
+    background-image: url('../Images/m4.jpg');
+    background-size: cover; 
+}
+h1{
+    color: black;
+}
+input[type="tel"] {
+    margin-top: 20px;
+    margin-left: 620px;
+}
+#read{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    margin-left: 665px;
+    background: #2980B9;  
+background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  
+background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+
+}
+
+#formr{
+    display: none;
+    /* border: 2px solid red; */
+    height: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: -4px -3px 27px 4px rgba(0,0,0,0.56);
+    border-radius: 20px;
+}
+
+#update , #delete{
+    margin-left: 20px;
+}
+button:hover{
+    opacity: 0.6;
+}
