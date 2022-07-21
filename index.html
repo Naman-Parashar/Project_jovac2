@@ -12,6 +12,19 @@
     <link rel="icon" href="./Assets/Home/title.png">
     <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script>
+        function pageLoder() {
+            document.querySelector(".mainbox").style.display = "none";
+            setTimeout(loader, 4000);
+        }
+
+        function loader() {
+            document.querySelector(".loading").style.display = "none";
+
+            document.querySelector(".mainbox").style.display = "block";
+
+        }
+    </script>
 </head>
 
 <body onload="pageLoder()">
