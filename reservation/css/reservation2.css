@@ -2,8 +2,21 @@ body{
     background-image: url('../Images/m4.jpg');
     background-size: cover; 
 }
+#logo {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 50px;
+    /* border: 2px solid red; */
+
+}
+
+#logo:hover {
+    transform: rotateY(360deg);
+    transition: 3s;
+}
 h1{
     color: black;
+    margin-top: -80px;
 }
 input[type="tel"] {
     margin-top: 20px;
@@ -26,8 +39,9 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     display: none;
     /* border: 2px solid red; */
     height: 500px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    margin-left: 30px;
     box-shadow: -4px -3px 27px 4px rgba(0,0,0,0.56);
     border-radius: 20px;
 }
