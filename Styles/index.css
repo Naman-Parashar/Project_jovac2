@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    cursor: url("/Images/bambooc4.png"),auto;
+    cursor: url("../Assets/Home/m.png"),auto;
 }
 
 * {
