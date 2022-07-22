@@ -13,6 +13,9 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    position: relative;
+    z-index: -100000;
 }
 
 .loading {
@@ -43,6 +46,8 @@ body {
 
 .mainbox {
     width: 100%;
+    position: relative;
+    z-index: -1000;
 }
 
 header {
@@ -50,6 +55,7 @@ header {
     /* border: 2px solid magenta; */
     height: 100vh;
     background: #FCF8E8;
+    
 }
 
 .page-1{
@@ -58,10 +64,13 @@ header {
     background-position: center center;
     height: 100vh;
     width: 100%;
+    position: relative;
+    z-index: -100;
 }
 
 
 nav {
+    position: relative;
     width: 100%;
     height: 5em;
     display: flex;
@@ -70,6 +79,7 @@ nav {
     background: rgba(255, 165, 0, 0.9);
     border-bottom: 1px solid  #fff;
     backdrop-filter: blur(5px);
+    z-index: 100;
 }
 
 nav img {
@@ -125,7 +135,6 @@ nav img {
     border: none;
     border-radius: 10px;
     font-size: 1.4rem;
-    
     margin: auto 0;
 }
 
@@ -142,6 +151,7 @@ nav img {
 nav ul li:hover .dropdown1 {
     display: block;
     position: absolute;
+    z-index: 200;
 }
 
 nav ul li:hover .dropdown1 li {
@@ -163,6 +173,7 @@ nav ul li:hover .dropdown1 ul li a {
     transition: 0.4s;
 }
 .container{
+    position: absolute;
     width: 100%;
     height: 90%;
     display: flex;
@@ -170,6 +181,7 @@ nav ul li:hover .dropdown1 ul li a {
     align-items: center;
     background: rgba(0,0,0,0.1);
     backdrop-filter:blur(7px) ;
+    z-index: -50;
 }
 
 .container h1{
