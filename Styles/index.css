@@ -87,9 +87,13 @@ nav img {
     padding: 0.3em;
 }
 
+.logo{
+    transition: 0.8s;
+}
+
 .logo:hover {
     transform: rotate(360deg);
-    transition: 3s;
+    transition: 0.8s;
 }
 
 
@@ -114,7 +118,7 @@ nav img {
 
 .nav-list li .fa:hover{
     transition: 0.4s;
-    transform: scale(2);
+    transform: rotate(360deg);
     color: #1F4690;
 }
 
