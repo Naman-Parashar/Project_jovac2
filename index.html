@@ -13,11 +13,126 @@
     <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
-<body onload="pageLoder()">
+
+<body>
+    <!-- onload="pageLoder()" -->
+
+    <!-- <div class="loading">
+        <div class="box-animation"> <img id="l" src="./Assets/Home/logo.png" alt="bamboo" height="200px"></div>
+        <p>Loading<span>....</span></p>
+    </div> -->
+
+    <div class="mainbox">
+        <header class="page-1">
+            <nav>
+                <div class="logo"><img src="./Assets/Home/logo.png" alt=""></div>
+                <ul class="nav-list">
+                    <li class="nav-list-items"><i class="fa fa-location-arrow"></i> <a href="#hours">Hours and
+                            Location</a>
+                    </li>
+                    <li class="nav-list-items"><i class="fa fa-book"></i> <a href="">Menu</a>
+                        <div class="dropdown1">
+                            <ul>
+                                <li><a class="links" href="./Markup/1_Brewery_Menu.html">Brewery Menu</a></li>
+                                <li><a class="links" href="./Markup/2_Brunch_Menu.html">Brunch Menu</a></li>
+                                <li><a class="links" href="./Markup/3_Cocktail_Bar_Menu.html">Cocktail Bar Menu</a></li>
+                                <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html">Fine Dining Menu</a></li>
+                                <li><a class="links" href="./Markup/5_Holiday_Menu.html">Holiday Menu</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-list-items"><i class="fa fa-user"></i> <a href="#">About</a></li>
+                    <li class="nav-list-items"><i class="fa fa-phone"></i> <a href="#contact">Contact</a></li>
+                    <li class="nav-list-items">
+                        <a href="./reservation/reservation.html">
+                            <button class="btn"><i class="fa fa-calendar" aria-hidden="true"></i> Reservation</button>
+                        </a>
+
+                    </li>
+                </ul>
+            </nav>
+            <div class="container">
+                <h1>
+                    I like <span id="container-food"></span>
+                </h1>
+            </div>
+
+        </header>
+        <header class="page-2">
+            <div class="para">
+                <p><q>A good restaurant is like a vacation;<br> it transports you, and it becomes a lot more <br> than
+                        just
+                        about the food.</q> <br><span id="author">Philip Rosenthal
+                    </span></p>
+            </div>
+        </header>
+
+        <header class="page-3" id="hours">
+            <img src="./Assets/Home/food4.jpg" alt="">
+            <div class="timings">
+                <h1 class="timings-heading">
+                    Hours and Location
+                </h1>
+                <div class="timings-heading-subtitle">
+                    Our restaurant
+                </div>
+                <div class="title">
+                    Hours
+                </div>
+                <div class="schedule">
+                    <ul class="timings-list">
+                        <li class="timings-list-item">Monday</li>
+                        <li class="timings-list-item">Tuesday</li>
+                        <li class="timings-list-item">Wednesday</li>
+                        <li class="timings-list-item">Thursday</li>
+                        <li class="timings-list-item">Friday</li>
+                        <li class="timings-list-item">Saturday</li>
+                        <li class="timings-list-item">Sunday</li>
+                    </ul>
+
+                    <ul class="timings-list-time">
+                        <li class="timings-list-item">- 12pm-9pm
+                        </li>
+                        <li class="timings-list-item">- 12pm-9pm
+                        </li>
+                        <li class="timings-list-item">- 12pm-9pm
+                        </li>
+                        <li class="timings-list-item">- 12pm-9pm
+                        </li>
+                        <li class="timings-list-item">- 12pm-9pm
+                        </li>
+                        <li class="timings-list-item">- 12pm-9pm
+                        </li>
+                        <li class="timings-list-item">- 12pm-9pm
+                        </li>
+                    </ul>
+                </div>
+                <div class="address">
+                    <h2>Address</h2>
+                    <address>480 Mike Ramp Suite 886West Alena Oregon 18944
+                    </address>
+                </div>
+            </div>
+        </header>
+
+        <header class="page-4">
+            <img src="./Assets/Home/res1.jpg" alt="">
+            <img src="./Assets/Home/res2.jpg" alt="">
+            <img src="./Assets/Home/res3.jpg" alt="">
+            <img src="./Assets/Home/res4.jpg" alt="">
+        </header>
+
+        <footer id="contact">
+            <p id="copyright">contact us : Bamboo &copy;</p>
+            <p>Mail us at : <a name="mail" href="mailto: support.bamboo@gmail.com">support.bamboo@gmail.com</a></p>
+            <p>Phone : <a name="cdf" href="tel: +917017350781 ">+917034897563 </a></p>
+        </footer>
+    </div>
+
     <script>
         function pageLoder() {
             document.querySelector(".mainbox").style.display = "none";
-            setTimeout(loader, 4000);
+            setTimeout(loader, 1000);
         }
 
         function loader() {
@@ -27,103 +142,14 @@
 
         }
     </script>
-    <div class="loading">
-        <div class="box-animation"> <img id="l" src="./Assets/Home/logo.png" alt="bamboo" height="200px"></div>
-        <p>Loading<span>....</span></p>
-    </div>
-
-    <div class="mainbox">
-        <div class="head">
-            <div class="nav">
-                <img id="logo" src="./Assets/Home/logo.png" alt="bamboo" height="100px">
-                <ul class="lists">
-                    <li class="list" id="list1"><a href="#address" class="links" id="link1"><i
-                                class="fa fa-location-arrow"></i> HOURS & LOCATION</a></li>
-                    <li class="list" id="list2"><a href="#" class="links" id="link2"><i class="fa fa-book"></i> MENU</a>
-                        <div class="dropdown1">
-                            <ul>
-                                <li><a class="links" href="./Markup/1_Brewery_Menu.html">Brewery Menu</a></li>
-                                <li><a class="links" href="./Markup/2_Brunch_Menu.html">Brunch Menu</a></li>
-                                <li><a class="links" href="./Markup/3_Cocktail_Bar_Menu.html">Cocktail Bar Menu</a></li>
-                                <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html">Fine Dining Menu</a></li>
-                                <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html">Holiday Menu</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="list" id="list3"><a href="#" class="links" id="link3"><i class="fa fa-user"></i>
-                            ABOUT</a>
-                    </li>
-                    <li class="list" id="list4"><a href="#cont" class="links" id="link4"><i class="fa fa-phone"></i>
-                            CONTACT</a></li>
-                    <li class="list" id="list5"><a href="./reservation/reservation.html" class="links" id="link5"><i
-                                class="fa fa-calendar" aria-hidden="true"></i> RESERVATIONS</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <div class="b"></div>
-            <div class="banner">
-                <p><q>A good restaurant is like a vacation;<br> it transports you, and it becomes a lot more <br> than
-                        just
-                        about the food.</q> <br><span id="author">Philip Rosenthal </span></p>
-                <img id="banner-img" src="./Assets/Home/food6.jpg" alt="food">
-            </div>
-            <div class="b"></div>
-
-            <a id="address"></a>
-            <div class="about-time">
-                <img src="./Assets/Home/food4.jpg" alt="bamboo">
-                <div class="aa">
-                    <p>
-
-                        <span class="about">ABOUT</span>
-                        <span class="our"><br> our restaurant</span>
-                        <hr width="240px">
-                        <h3 class="hour"><br>HOURS</h3>
-                        <ul>
-                            <li class="day">MONDAY <span id="s1"> - 12pm-9pm</span></li>
-                            <li class="day">TUSEDAY <span id="s2"> - 12pm-9pm</span></li>
-                            <li class="day">WEDNESDAY <span id="s3"> - 12pm-9pm</span></li>
-                            <li class="day">THRUSDAY <span id="s4"> - 12pm-9pm</span></li>
-                            <li class="day">FRIDAY <span id="s5"> - 12pm-9pm</span></li>
-                            <li class="day">SATURDAY <span id="s6"> - 12pm-9pm</span></li>
-                            <li class="day">SUNDAY <span id="s7"> - 12pm-9pm</span></li>
-                        </ul>
-                        <h2><br> ADDRESS</h2>
-                        <address>480 Mike Ramp Suite 886West Alena Oregon 18944</address>
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="collect">
-                <img id="cimg1" src="./Assets/Home/res1.jpg" alt="">
-                <img id="cimg2" src="./Assets/Home/res2.jpg" alt="">
-                <img id="cimg3" src="./Assets/Home/res3.jpg" alt="">
-                <img id="cimg4" src="./Assets/Home/res4.jpg" alt="">
-            </div>
-
-
-            <div class="footer">
-                <p id="copyright">contact us : Bamboo &copy;</p>
-                <p>Mail us at : <a name="mail" href="mailto: support.bamboo@gmail.com">support.bamboo@gmail.com</a></p>
-                <p>Phone : <a name="cdf" href="tel: +917017350781 ">+917034897563 </a></p>
-            </div>
-            <a id="cont"></a>
-        </div>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        function pageLoder() {
-            document.querySelector(".mainbox").style.display = "none";
-            setTimeout(loader, 4000);
-        }
-
-        function loader() {
-            document.querySelector(".loading").style.display = "none";
-
-            document.querySelector(".mainbox").style.display = "block";
-
-        }
+        var typed=new Typed("#container-food",{
+            strings:["Burger 😍","Pizza 😋","Pasta 😚"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+        }) ;
     </script>
 </body>
 
