@@ -15,6 +15,19 @@
 </head>
 
 <body>
+    <script>
+        function pageLoder() {
+            document.querySelector(".mainbox").style.display = "none";
+            setTimeout(loader, 1000);
+        }
+
+        function loader() {
+            document.querySelector(".loading").style.display = "none";
+
+            document.querySelector(".mainbox").style.display = "block";
+
+        }
+    </script>
     <!-- onload="pageLoder()" -->
 
     <!-- <div class="loading">
@@ -129,19 +142,7 @@
         </footer>
     </div>
 
-    <script>
-        function pageLoder() {
-            document.querySelector(".mainbox").style.display = "none";
-            setTimeout(loader, 1000);
-        }
-
-        function loader() {
-            document.querySelector(".loading").style.display = "none";
-
-            document.querySelector(".mainbox").style.display = "block";
-
-        }
-    </script>
+   
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed=new Typed("#container-food",{
