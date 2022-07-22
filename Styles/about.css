@@ -51,11 +51,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .team-section{
     width: 50%;
-    margin: 0 auto;
+    margin: 0 3.5em;
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
@@ -70,8 +71,9 @@ header {
 }
 .team-mates-item{
     padding: 2em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #1F4690;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
 .team-mates-item:hover{
