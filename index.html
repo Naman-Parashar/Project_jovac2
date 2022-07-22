@@ -71,12 +71,18 @@
             </div>
 
         </header>
-        <header class="page-2">
+        <header class="page-2"> 
+            <div class="page-2-image">
+                <img src="./Assets/Home/burp.gif" alt="">
+            </div>
+
             <div class="para">
-                <p><q>A good restaurant is like a vacation;<br> it transports you, and it becomes a lot more <br> than
+                <!-- <p><q>A good restaurant is like a vacation;<br> it transports you, and it becomes a lot more <br> than
                         just
                         about the food.</q> <br><span id="author">Philip Rosenthal
-                    </span></p>
+                    </span></p> -->
+                    <span class="burp"></span>
+                
             </div>
         </header>
 
@@ -149,6 +155,13 @@
             strings:["Burger 😍","Pizza 😋","Pasta 😚"],
             typeSpeed:150,
             backSpeed:150,
+            loop:true
+        }) ;
+
+        var typed=new Typed(".burp",{
+            strings:["Burp..."],
+            typeSpeed:200,
+            backSpeed:200,
             loop:true
         }) ;
     </script>

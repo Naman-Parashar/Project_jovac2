@@ -196,18 +196,26 @@ nav ul li:hover .dropdown1 ul li a {
 
 .page-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-image: url(../Assets/Home/food6.jpg);
     background-repeat: no-repeat;
+    width: 100%;
     background-position: center center;
     background-size: cover;
+    height: 50%;
+    background-color: #fff;
+    height: 10em;
+}
+
+.page-2-image img{
+    width: 50%;
+    /* height: 100vh; */
 }
 
 .page-2 .para {
     margin: 0 1em;
-    font-size: 5rem;
-    font-family: 'The Nautigal', cursive;
+    font-size: 2rem;
+    /* font-family: 'The Nautigal', cursive; */
 }
 
 #author {
