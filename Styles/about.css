@@ -5,6 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -54,7 +59,7 @@ header {
     width: 100%;
 }
 
-.team-section{
+.team-section {
     width: 50%;
     margin: 0 3.5em;
     /* border: 2px solid red; */
@@ -63,29 +68,78 @@ header {
     align-items: center;
 }
 
-.team-mates{
+.team-mates {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr 4fr 5fr ;
-    
+    grid-template-columns: 1fr 2fr 3fr 4fr 5fr;
+
 }
-.team-mates-item{
+
+.team-mates-item {
     padding: 2em;
     font-size: 1.2rem;
     color: #1F4690;
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
 
-.team-mates-item:hover{
+.team-mates-item:hover {
     transition: 0.4s;
     transform: scale(1.2);
 }
 
-.team-mates-item img{
+.team-mates-item img {
     transition: 0.4s;
 }
 
-.team-mates-item img:hover{
+.team-mates-item img:hover {
     transition: 0.4s;
     transform: rotate(360deg);
+}
+
+@media (max-width:660px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    .page-1 {
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .page-1 .about {
+        margin-top: 1em;
+    }
+
+    .page-2 {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 200vh;
+    }
+
+    .page-2 .members-gif img {
+        margin: 0;
+        height: fit-content;
+        overflow: hidden;
+        /* border: 2px solid steelblue; */
+    }
+
+    .team-section{
+        /* border: 2px solid red; */
+    }
+
+    .team-section h1 {
+        margin: 3em auto;
+        text-align: center;
+    }
+
+    .team-mates {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1em auto;
+        overflow: hidden;
+    }
 }

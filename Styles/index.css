@@ -9,11 +9,15 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
     position: relative;
     z-index: -100000;
 }
@@ -55,10 +59,10 @@ header {
     /* border: 2px solid magenta; */
     height: 100vh;
     background: #FCF8E8;
-    
+
 }
 
-.page-1{
+.page-1 {
     background-image: url(../Assets/Home/Background.jpg);
     background-size: cover;
     background-position: center center;
@@ -77,7 +81,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background: rgba(255, 165, 0, 0.9);
-    border-bottom: 1px solid  #fff;
+    border-bottom: 1px solid #fff;
     backdrop-filter: blur(5px);
     z-index: 100;
 }
@@ -87,7 +91,7 @@ nav img {
     padding: 0.3em;
 }
 
-.logo{
+.logo {
     transition: 0.8s;
 }
 
@@ -116,7 +120,7 @@ nav img {
     color: white;
 }
 
-.nav-list li .fa:hover{
+.nav-list li .fa:hover {
     transition: 0.4s;
     transform: rotate(360deg);
     color: #1F4690;
@@ -176,23 +180,52 @@ nav ul li:hover .dropdown1 ul li a {
     transform: scale(1.12);
     transition: 0.4s;
 }
-.container{
+
+.container {
     position: absolute;
     width: 100%;
-    height: 90%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,0.1);
-    backdrop-filter:blur(7px) ;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
     z-index: -50;
 }
 
-.container h1{
+.container h1 {
     font-size: 7rem;
     font-weight: 800;
     color: #FCF8E8;
 }
+
+.mobile-layout{
+    position: absolute;
+    display: flex;
+    background-color: #189818;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-layout img{
+    height: 50%;
+    margin: auto 2em;
+}
+
+.mobile-layout h1{
+    color: white;
+    font-size: 2rem;
+}
+
+.mobile-layout{
+    display: none;
+}
+
+
 
 .page-2 {
     display: flex;
@@ -207,7 +240,7 @@ nav ul li:hover .dropdown1 ul li a {
     height: 10em;
 }
 
-.page-2-image img{
+.page-2-image img {
     width: 50%;
     /* height: 100vh; */
 }
@@ -278,9 +311,9 @@ nav ul li:hover .dropdown1 ul li a {
 
 .page-4 img {
     width: 25%;
-    padding: 1em; 
+    padding: 1em;
     margin: 0;
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .address {
@@ -315,4 +348,81 @@ footer a {
 
 footer a:hover {
     color: #1F4690;
+}
+
+@media (max-width:660px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    body {
+        position: relative;
+        z-index: -100000;
+    }
+
+    .mobile-layout{
+        display:flex;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .container h1 {
+        font-size: 4rem;
+        /* margin: 0 auto; */
+    }
+
+    .page-3 {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .page-3 img {
+        height: 40%;
+        width: 90%;
+        margin-top: 1em;
+        border-radius: 10px;
+    }
+
+    .timings-heading {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .timings-heading-subtitle {
+        margin-top: 0.01em;
+    }
+
+    .title {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .schedule {
+        margin: 0 auto;
+    }
+
+    .timings-list-item {
+        padding: 1em;
+    }
+
+    .page-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .page-4 img {
+        height: 90%;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
 }
