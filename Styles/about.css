@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 html {
@@ -127,9 +127,6 @@ header {
         /* border: 2px solid steelblue; */
     }
 
-    .team-section{
-        /* border: 2px solid red; */
-    }
 
     .team-section h1 {
         margin: 3em auto;
