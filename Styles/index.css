@@ -84,7 +84,7 @@ nav {
     border-bottom: 1px solid #fff;
     backdrop-filter: blur(5px);
     z-index: 100;
-    
+
 }
 
 nav img {
@@ -161,7 +161,7 @@ nav ul li:hover .dropdown1 {
     display: block;
     position: absolute;
     z-index: 200;
-    
+
 }
 
 nav ul li:hover .dropdown1 li {
@@ -203,7 +203,16 @@ nav ul li:hover .dropdown1 ul li a {
     color: #FCF8E8;
 }
 
-.mobile-layout{
+.mobile-layout {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.mobile-layout-header {
     position: absolute;
     display: flex;
     background-color: #189818;
@@ -211,22 +220,64 @@ nav ul li:hover .dropdown1 ul li a {
     width: 100%;
     height: 10%;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-.mobile-layout img{
+.mobile-layout-header img {
     height: 50%;
     margin: auto 2em;
 }
 
-.mobile-layout h1{
+.mobile-layout-header h1 {
     color: white;
     font-size: 2rem;
 }
 
-.mobile-layout{
+.hamburger img {
+    width: 40%;
+}
+
+#mobile-layout-nav {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    /* background-color:rgba(24, 152, 24,0.8); */
+    /* background-color: rgba(255, 165, 0, 0.2); */
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    /* border: 2px solid red; */
+}
+
+.nav-list-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list-item-mobile {
+    font-size: 3rem;
+    margin: 1.2em;
+}
+
+.nav-list-item-mobile a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list-item-mobile button {
+    font-size: 3rem;
+}
+
+.mobile-layout {
     display: none;
+}
+
+#mobile-layout-nav {
+    visibility: hidden;
+    /* border: 2px solid red; */
 }
 
 
@@ -368,12 +419,16 @@ footer a:hover {
         z-index: -100000;
     }
 
-    .mobile-layout{
-        display:flex;
+    .mobile-layout {
+        display: flex;
     }
 
-    nav{
+    nav {
         display: none;
+    }
+
+    .container {
+        position: absolute;
     }
 
     .container h1 {
@@ -429,5 +484,4 @@ footer a:hover {
         margin: 0;
         padding: 0;
     }
-
 }

@@ -25,8 +25,45 @@
     <div class="mainbox">
         <header class="page-1">
             <div class="mobile-layout">
-                <img src="./Assets/Home/logo.png" alt="">
-                <h1>Welcome to Bamboo</h1>
+                <div class="mobile-layout-header">
+                    <img src="./Assets/Home/logo.png" alt="">
+                    <h1>Welcome to Bamboo</h1>
+                    <div class="hamburger">
+                        <img src="./Assets/Home/Bars.png" alt="">
+                    </div>
+                </div>
+                <div id="mobile-layout-nav">
+                    <ul class="nav-list-mobile">
+                        <li class="nav-list-item-mobile">
+                            <a href="#hours">Hours and
+                                Location</a>
+                        </li>
+                        <li class="nav-list-item-mobile" id="menu-nav"><a href="">Menu</a>
+                            <div class="dropdown1" id="dropMobile">
+                                <ul>
+                                    <li><a class="links" href="./Markup/1_Brewery_Menu.html" target="_blank">Brewery
+                                            Menu</a></li>
+                                    <li><a class="links" href="./Markup/2_Brunch_Menu.html" target="_blank">Brunch Menu</a>
+                                    </li>
+                                    <li><a class="links" href="./Markup/3_Cocktail_Bar_Menu.html" target="_blank">Cocktail
+                                            Bar Menu</a></li>
+                                    <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html" target="_blank">Fine Dining
+                                            Menu</a></li>
+                                    <li><a class="links" href="./Markup/5_Holiday_Menu.html" target="_blank">Holiday
+                                            Menu</a></li>
+                                </ul>
+                            </div></li>
+                        <li class="nav-list-item-mobile"><a href="./Markup/6_About.html" target="_blank">About</a></li>
+                        <li class="nav-list-item-mobile"><a href="#contact">Contact</a></li>
+                        <li class="nav-list-item-mobile"><a href="./reservation/reservation.html" target="_blank">
+                                <button class="btn"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                    Reservation</button>
+                            </a></li>
+                        <li id="cross" class="nav-list-item-mobile">
+                            <img src="./Assets/Home/cross.png" alt="">
+                        </li>
+                    </ul>
+                </div>
             </div>
             <nav>
                 <div><img class="logo" src="./Assets/Home/logo.png" alt=""></div>
@@ -37,15 +74,21 @@
                     <li class="nav-list-items"><i class="fa fa-book"></i> <a href="">Menu</a>
                         <div class="dropdown1">
                             <ul>
-                                <li><a class="links" href="./Markup/1_Brewery_Menu.html" target="_blank">Brewery Menu</a></li>
-                                <li><a class="links" href="./Markup/2_Brunch_Menu.html" target="_blank">Brunch Menu</a></li>
-                                <li><a class="links" href="./Markup/3_Cocktail_Bar_Menu.html" target="_blank">Cocktail Bar Menu</a></li>
-                                <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html" target="_blank">Fine Dining Menu</a></li>
-                                <li><a class="links" href="./Markup/5_Holiday_Menu.html" target="_blank">Holiday Menu</a></li>
+                                <li><a class="links" href="./Markup/1_Brewery_Menu.html" target="_blank">Brewery
+                                        Menu</a></li>
+                                <li><a class="links" href="./Markup/2_Brunch_Menu.html" target="_blank">Brunch Menu</a>
+                                </li>
+                                <li><a class="links" href="./Markup/3_Cocktail_Bar_Menu.html" target="_blank">Cocktail
+                                        Bar Menu</a></li>
+                                <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html" target="_blank">Fine Dining
+                                        Menu</a></li>
+                                <li><a class="links" href="./Markup/5_Holiday_Menu.html" target="_blank">Holiday
+                                        Menu</a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-list-items"><i class="fa fa-user"></i> <a href="./Markup/6_About.html" target="_blank">About</a></li>
+                    <li class="nav-list-items"><i class="fa fa-user"></i> <a href="./Markup/6_About.html"
+                            target="_blank">About</a></li>
                     <li class="nav-list-items"><i class="fa fa-phone"></i> <a href="#contact">Contact</a></li>
                     <li class="nav-list-items">
                         <a href="./reservation/reservation.html" target="_blank">
@@ -62,7 +105,7 @@
             </div>
 
         </header>
-        <header class="page-2"> 
+        <header class="page-2">
             <div class="page-2-image">
                 <img src="./Assets/Home/burp.gif" alt="">
             </div>
@@ -72,8 +115,8 @@
                         just
                         about the food.</q> <br><span id="author">Philip Rosenthal
                     </span></p> -->
-                    <span class="burp"></span>
-                
+                <span class="burp"></span>
+
             </div>
         </header>
 
@@ -154,19 +197,39 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-        var typed=new Typed("#container-food",{
-            strings:["Burger 😍","Pizza 😋","Pasta 😚"],
-            typeSpeed:150,
-            backSpeed:150,
-            loop:true
-        }) ;
+        var typed = new Typed("#container-food", {
+            strings: ["Burger 😍", "Pizza 😋", "Pasta 😚"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
 
-        var typed=new Typed(".burp",{
-            strings:["Burp..."],
-            typeSpeed:200,
-            backSpeed:200,
-            loop:true
-        }) ;
+        var typed = new Typed(".burp", {
+            strings: ["Burp..."],
+            typeSpeed: 200,
+            backSpeed: 200,
+            loop: true
+        });
+    </script>
+
+    <script>
+        const nav = document.querySelector(".hamburger");
+        const navList = document.getElementById("mobile-layout-nav");
+        nav.addEventListener("click", () => {
+            navList.style.visibility = "visible";
+            // navList.style.transition = "0.4s";
+        });
+        const cross=document.querySelector("#cross") ;
+        cross.addEventListener("click",()=>{
+            navList.style.visibility="hidden" ;
+            // navList.style.transition = "0.4s";
+        })
+
+        const menuNav=document.querySelector("#menu-nav") ;
+        const dropdownMobile=document.getElementById("dropMobile") ;
+        menuNav.addEventListener("click",()=>{
+            dropdownMobile.style.display="block";
+        })
     </script>
 </body>
 
