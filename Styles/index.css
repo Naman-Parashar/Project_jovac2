@@ -93,12 +93,12 @@ nav img {
 }
 
 .logo {
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 .logo:hover {
     transform: rotate(360deg);
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 
@@ -161,6 +161,7 @@ nav ul li:hover .dropdown1 {
     display: block;
     position: absolute;
     z-index: 200;
+    
 }
 
 nav ul li:hover .dropdown1 li {
@@ -169,6 +170,7 @@ nav ul li:hover .dropdown1 li {
     margin: 0;
     border: 1px solid white;
     background-color: rgba(255, 165, 0, 0.9);
+    backdrop-filter: blur(7px);
 }
 
 nav ul li:hover .dropdown1 ul li a {

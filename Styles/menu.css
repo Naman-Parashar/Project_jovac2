@@ -25,15 +25,21 @@ nav img {
     margin: 1em;
 }
 
-nav #logo:hover {
-    transform: rotate(360deg);
-    transition: 1s;
+#logo {
+    transition: 0.4s;
 }
+
+#logo:hover {
+    transform: rotate(360deg);
+    transition: 0.4s;
+}
+
 
 main img {
     height: 90%;
     margin: 2em;
     border-radius: 20px;
+    
 }
 
 main img:hover {
