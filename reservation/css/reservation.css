@@ -17,8 +17,8 @@ body{
 }
 
 #logo:hover {
-    transform: rotateY(360deg);
-    transition: 3s;
+    transition: 0.4s;
+    transform: rotate(360deg);
 }
 h1{
     text-align: center;

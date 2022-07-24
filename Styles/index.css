@@ -35,8 +35,15 @@ body {
     width: 300px;
     height: 300px;
     animation: rotate 2s linear infinite;
+    /* border: 2px solid red; */
+    position: relative;
 }
 
+.box-animation img{
+    position:absolute;
+    left: 3rem;
+    top: 2.5rem;
+}
 .loading p {
     text-transform: uppercase;
     color: black;
@@ -46,6 +53,17 @@ body {
     font-size: 30px;
     transition: 2s;
     animation: bounce 1.5s linear infinite;
+}
+
+@keyframes  rotate{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg);
+        transition: 2s;
+    }
 }
 
 .mainbox {
