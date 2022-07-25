@@ -14,13 +14,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
-<body>
-    <!-- onload="pageLoder()" -->
+<body  onload="pageLoder()">
+    <script>
+        function pageLoder() {
+            document.querySelector(".mainbox").style.display = "none";
+            setTimeout(loader, 2000);
+        }
 
-    <!-- <div class="loading">
+        function loader() {
+            document.querySelector(".loading").style.display = "none";
+
+            document.querySelector(".mainbox").style.display = "block";
+
+        }
+    </script>
+   
+    <div class="loading">
         <div class="box-animation"> <img id="l" src="./Assets/Home/logo.png" alt="bamboo" height="200px"></div>
         <p>Loading<span>....</span></p>
-    </div> -->
+    </div>
 
     <div class="mainbox">
         <header class="page-1">
@@ -41,15 +53,15 @@
                         <li class="nav-list-item-mobile" id="menu-nav"><a href="">Menu</a>
                             <div class="dropdown1" id="dropMobile">
                                 <ul>
-                                    <li><a class="links" href="./Markup/1_Brewery_Menu.html" target="_blank">Brewery
+                                    <li><a class="links" href="./Markup/1_Brewery_Menu.html">Brewery
                                             Menu</a></li>
-                                    <li><a class="links" href="./Markup/2_Brunch_Menu.html" target="_blank">Brunch Menu</a>
+                                    <li><a class="links" href="./Markup/2_Brunch_Menu.html" >Brunch Menu</a>
                                     </li>
-                                    <li><a class="links" href="./Markup/3_Cocktail_Bar_Menu.html" target="_blank">Cocktail
+                                    <li><a class="links" href="./Markup/3_Cocktail_Bar_Menu.html" >Cocktail
                                             Bar Menu</a></li>
-                                    <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html" target="_blank">Fine Dining
+                                    <li><a class="links" href="./Markup/4_Fine_Dining_Menu.html" >Fine Dining
                                             Menu</a></li>
-                                    <li><a class="links" href="./Markup/5_Holiday_Menu.html" target="_blank">Holiday
+                                    <li><a class="links" href="./Markup/5_Holiday_Menu.html">Holiday
                                             Menu</a></li>
                                 </ul>
                             </div></li>
@@ -91,7 +103,7 @@
                             target="_blank">About</a></li>
                     <li class="nav-list-items"><i class="fa fa-phone"></i> <a href="#contact">Contact</a></li>
                     <li class="nav-list-items">
-                        <a href="./reservation/reservation.html" target="_blank">
+                        <a href="./reservation/reservation.html">
                             <button class="btn"><i class="fa fa-calendar" aria-hidden="true"></i> Reservation</button>
                         </a>
 
@@ -182,19 +194,7 @@
         </footer>
     </div>
 
-    <script>
-        function pageLoder() {
-            document.querySelector(".mainbox").style.display = "none";
-            setTimeout(loader, 1000);
-        }
-
-        function loader() {
-            document.querySelector(".loading").style.display = "none";
-
-            document.querySelector(".mainbox").style.display = "block";
-
-        }
-    </script>
+   
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed("#container-food", {
