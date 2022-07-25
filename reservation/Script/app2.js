@@ -7,7 +7,7 @@ function readFom() {
   f1v = document.getElementById("f1").value;
   datev = document.getElementById("date").value;
   timev = document.getElementById("time").value;
-  console.log(namev, phonev, emailv, f1v, datev, timev);
+  // console.log(namev, phonev, emailv, f1v, datev, timev);
 }
 
 document.getElementById("read").onclick = function (event) {

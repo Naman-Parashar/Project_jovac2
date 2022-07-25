@@ -20,7 +20,6 @@ document.getElementById("insert").onclick = function (event) {
     document.getElementById("time").value=="")
     {
         alert("Please complete the Form");
-        document.getElementById("formr").reset();
     }
     
     else{
@@ -29,9 +28,10 @@ document.getElementById("insert").onclick = function (event) {
       firebase.database().ref("Hres").once('value', function(snapshot) {
         if (snapshot.hasChild( document.getElementById("phone").value)) {
           alert("This phone is already registered");
+          document.getElementById("formr").reset();
         }
         else{
-          if(document.getElementById("email").value.match("^[a-z0-9._]+@gmail\.[a-z]{2,}$"))
+          if(document.getElementById("email").value.match("^[a-z0-9._]+@gmail\.com$"))
           {
               readFom();
   
@@ -58,14 +58,12 @@ document.getElementById("insert").onclick = function (event) {
           }
           else{
               alert("Please enter a valid email");
-              document.getElementById("formr").reset();
           }
         }
     }); 
     }
     else {
         alert("Please enter a valid phone number");
-        document.getElementById("formr").reset();
     }
 }
 };

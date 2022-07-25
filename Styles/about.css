@@ -15,6 +15,7 @@ html {
 body {
     font-size: 14px;
     background-color: #FCF8E8;
+    width:-1000px;
 }
 
 header {
